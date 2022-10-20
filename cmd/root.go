@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/kvsize"
+	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/stats"
 
 	"github.com/spf13/cobra"
 )
@@ -16,6 +17,7 @@ type RootCommand struct {
 func (root *RootCommand) registerSubCommands() {
 	root.baseCmd.AddCommand(
 		kvsize.GetCommand(),
+		stats.GetCommand(),
 	)
 }
 
