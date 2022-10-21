@@ -1,12 +1,12 @@
 ## goleveldb large WriteBuffer defect
 
 Test environment:
-  OS: Fedora Linux 36.20221008.0 (Silverblue)
-  CPU: Intel Core i7 10700K
-  Memory: 8GB RAM
-  Disk: INTEL SS DPEKNW512G8 (1.00)
-  Go Version: 1.19.2 linux/amd64
-  Partition format: brtfs
+  * OS: Fedora Linux 36.20221008.0 (Silverblue)
+  * CPU: Intel Core i7 10700K
+  * Memory: 8GB RAM
+  * Disk: INTEL SS DPEKNW512G8 (1.00)
+  * Go Version: 1.19.2 linux/amd64
+  * Partition format: brtfs
 
 Condition:
 
