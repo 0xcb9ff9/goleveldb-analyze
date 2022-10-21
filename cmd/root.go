@@ -6,6 +6,7 @@ import (
 
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/kvsize"
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/stats"
+	"github.com/0xcb9ff9/goleveldb-analyze/v2/verify/largewritebuffer"
 
 	"github.com/spf13/cobra"
 )
@@ -18,6 +19,7 @@ func (root *RootCommand) registerSubCommands() {
 	root.baseCmd.AddCommand(
 		kvsize.GetCommand(),
 		stats.GetCommand(),
+		largewritebuffer.GetCommand(),
 	)
 }
 
