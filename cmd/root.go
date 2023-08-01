@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/duplicate"
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/kvsize"
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/cmd/stats"
 	"github.com/0xcb9ff9/goleveldb-analyze/v2/verify/largewritebuffer"
@@ -20,6 +21,7 @@ func (root *RootCommand) registerSubCommands() {
 		kvsize.GetCommand(),
 		stats.GetCommand(),
 		largewritebuffer.GetCommand(),
+		duplicate.GetCommand(),
 	)
 }
 
